@@ -1,0 +1,14 @@
+<h3>{{title}}</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th *ngFor="let field of headers">{{field}}</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of records">
+            <td *ngFor="let field of headers">{{record[field]}}</td>
+        </tr>
+    </tbody>
+</table>

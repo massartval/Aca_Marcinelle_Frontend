@@ -1,0 +1,36 @@
+<h3>{{title}}</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Prénom</th>
+            <th>Nom</th>
+            <th>Catégorie</th>
+            <th>Date de naissance</th>
+            <th>Adresse</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>NISS</th>
+            <th>Email</th>
+            <th>Téléphone</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let record of records">
+            <td><button type="button" class="btn btn-sm btn-outline-primary" (click)="getDetails(record.id)">+</button></td>
+            <td>{{record.firstName}}</td>
+            <td>{{record.lastName}}</td>
+            <td>{{record.categoryId}}</td>
+            <td>{{record.birthDate}}</td>
+            <td>{{record.city}}</td>
+            <td>{{record.street}}</td>
+            <td>{{record.houseNumber}}</td>
+            <td>{{record.zipcode}}</td>
+            <td>{{record.niss}}</td>
+            <td>{{record.email}}</td>
+            <td>{{record.phoneNumber}}</td>
+        </tr>
+    </tbody>
+</table>

@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Aca_Marcinelle_Frontend';
+  Alert() {
+    alert("Hello");
+  };
 }

@@ -1,0 +1,10 @@
+<!-- Zone contrôles tableau -->
+<button type="button" class="btn btn-primary" (click)="getAllPersons()">
+    Get all persons
+</button>
+<button type="button" class="btn btn-primary" (click)="getAllCourses()">
+    Get all courses
+</button>
+
+<app-person-table *ngIf="(tableType == 'person')" [headers]="headers" [records]="records" [title]="title"></app-person-table>
+<app-table *ngIf="(tableType == 'course')" [headers]="headers" [records]="records" [title]="title"></app-table>
